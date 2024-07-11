@@ -98,7 +98,7 @@
 	--accent-subtle-overlay: var(--accent-overlay);
 	--accent-text-over: var(--gray-0);
 
-	--link-color: var(--accent-dark);
+	--link-color: var(--accent-regular);
 
 	--title-bg: #001300;
 	--title-text: var(--accent-light)
@@ -129,7 +129,7 @@ body {
 
 body {
 	background-color: var(--gray-999);
-	color: var(--gray-200);
+	color: var(--gray-0);
 	font-family: var(--font-body);
 	-webkit-font-smoothing: antialiased;
 	line-height: 1.5;
