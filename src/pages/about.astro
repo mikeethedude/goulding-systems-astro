@@ -3,6 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
+
+import MikePortrait from '../images/mikeportrait.png';
 ---
 
 <BaseLayout title="About | Goulding Systems" description="About Goulding Systems and Mike Goulding">
@@ -15,7 +17,7 @@ import Hero from '../components/Hero.astro';
 				<img
 					width="200"
 					height="200"
-					src="/assets/mikeportrait.jpeg"
+					src={MikePortrait.src}
 					alt="Mike Goulding portrait"
 				/>
 			</Hero>
