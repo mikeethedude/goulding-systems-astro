@@ -14,4 +14,9 @@ const email = `${emailUser}@${emailDomain}`;
   <Button id="contact-button" href="#">
     Email Me
 </Button>
+
+<script define:vars={{ email }}>
+    // Set the href attribute of the button to the email link
+    document.getElementById('contact-button').href = `mailto:${email}`;
+</script>
 </section>

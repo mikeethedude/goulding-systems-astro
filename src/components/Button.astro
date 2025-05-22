@@ -5,6 +5,7 @@ const { href, type = 'button', ...rest } = Astro.props;
 {href ? (
   <a
     href={href}
+    id={rest?.id}
     class="inline-block bg-primaryGreen text-white px-8 py-3 rounded-lg shadow hover:bg-green-800 transition"
     {...rest}
   >
