@@ -1,0 +1,17 @@
+---
+import Button from './Button.astro'
+const emailUser = "mike";
+const emailDomain = "goulding.systems";
+const email = `${emailUser}@${emailDomain}`;
+---
+
+<section id="contact" class="bg-white py-24 px-6 max-w-6xl mx-auto text-center" id="contact">
+  <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+  <p class="mb-8 text-lg leading-relaxed max-w-xl mx-auto text-gray-700">
+    Whether you have a project idea or just want to say hello, feel free to reach out!
+  </p>
+
+  <Button href={`mailto:${email}`}>
+    Email Me
+</Button>
+</section>

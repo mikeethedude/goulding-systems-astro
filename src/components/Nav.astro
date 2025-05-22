@@ -8,8 +8,10 @@ import SmallLogo from '../images/smalltransparent.png';
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
 	{ label: 'Home', href: Astro.site },
-	{ label: 'Work', href: '/work' },
-	{ label: 'About', href: '/about' },
+	{ label: 'About', href: '#about' },
+	{ label: 'Services', href: '#services' },
+	{ label: 'Work', href: '#projects' },
+	{ label: 'Contact', href: '#contact' },
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
@@ -104,10 +106,6 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 						</a>
 					))
 				}
-			</div>
-
-			<div class="theme-toggle">
-				<ThemeToggle />
 			</div>
 		</div>
 	</div>

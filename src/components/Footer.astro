@@ -1,69 +1,13 @@
 ---
-import Icon from './Icon.astro';
 const currentYear = new Date().getFullYear();
 ---
 
-<footer>
-	<div class="group">
-		<p>&copy; {currentYear} Mike Goulding / Goulding Systems</p>
-	</div>
-	<p class="socials">
-		<a href="https://www.linkedin.com/in/mike-goulding/"> LinkedIn</a>
-		<a href="https://github.com/mikeethedude"> GitHub</a>
-	</p>
+<footer class="flex flex-col md:flex-row justify-between items-center gap-12 mt-auto px-8 py-12 text-center text-sm text-gray-500">
+  <div class="flex flex-col md:flex-row items-center gap-2 md:gap-4 flex-wrap">
+    <p>&copy; {currentYear} Mike Goulding / Goulding Systems</p>
+  </div>
+  <p class="flex gap-4 flex-wrap justify-center md:justify-end">
+    <a href="https://www.linkedin.com/in/mike-goulding/" class="hover:text-gray-700 underline underline-offset-2">LinkedIn</a>
+    <a href="https://github.com/mikeethedude" class="hover:text-gray-700 underline underline-offset-2">GitHub</a>
+  </p>
 </footer>
-<style>
-	footer {
-		display: flex;
-		flex-direction: column;
-		gap: 3rem;
-		margin-top: auto;
-		padding: 3rem 2rem 3rem;
-		text-align: center;
-		color: var(--gray-400);
-		font-size: var(--text-sm);
-	}
-
-	footer a {
-		color: var(--gray-400);
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
-
-	footer a:hover,
-	footer a:focus {
-		text-decoration-color: currentColor;
-	}
-
-	.group {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-	}
-
-	.socials {
-		display: flex;
-		justify-content: center;
-		gap: 1rem;
-		flex-wrap: wrap;
-	}
-
-	@media (min-width: 50em) {
-		footer {
-			flex-direction: row;
-			justify-content: space-between;
-			padding: 2.5rem 5rem;
-		}
-
-		.group {
-			flex-direction: row;
-			gap: 1rem;
-			flex-wrap: wrap;
-		}
-
-		.socials {
-			justify-content: flex-end;
-		}
-	}
-</style>

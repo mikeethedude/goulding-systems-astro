@@ -1,7 +1,7 @@
 {
   "name": "goulding-systems",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.2.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,7 +10,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^3.3.1",
+    "@lucide/astro": "^0.511.0",
+    "astro": "^5.8.0",
     "sass": "^1.69.4"
+  },
+  "devDependencies": {
+    "@astrojs/tailwind": "^6.0.2",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17"
   }
 }

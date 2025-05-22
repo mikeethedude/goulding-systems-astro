@@ -1,0 +1,40 @@
+---
+import { Gem, FileJson, Asterisk, Shapes, Archive, BrickWallFire, BookUser, FileCode2 } from '@lucide/astro';
+
+const skills = [
+  { name: "PHP", icon: FileCode2 },
+  { name: "JavaScript", icon: FileJson },
+  { name: "Perl", icon: Asterisk },
+  { name: "Ruby", icon: Gem },
+  { name: "React", icon: Shapes },
+  { name: "SQL", icon: Archive },
+  { name: "Drupal", icon: BrickWallFire },
+  { name: "WordPress", icon: BookUser }
+];
+
+---
+<section class="bg-gray-100 py-24 px-6 max-w-6xl mx-auto text-center" id="about">
+  <h2 class="text-3xl font-semibold mb-6">About Me</h2>
+  <p class="text-lg mb-6 max-w-3xl mx-auto text-gray-800">
+    I’m a Senior Software Engineer, Engineering Manager, and strategist with over a decade of experience shaping high-impact digital experiences.  
+    I’ve built and led projects for PBS affiliates, universities, and nonprofits—designing solutions that go beyond code to support real missions and drive meaningful results.
+  </p>
+  <p class="text-lg mb-6 max-w-3xl mx-auto text-gray-800">
+    My expertise spans a broad range of technologies including PHP, JavaScript, TypeScript, HTML/CSS, Drupal, WordPress, GraphQL, React, and Next.js.  
+    I thrive leading talented teams and delivering projects that exceed client expectations.
+  </p>
+  <p class="text-lg max-w-3xl mx-auto text-gray-800 mb-12">
+    Beyond coding, I’m a strong communicator and collaborative team member, always eager to learn new skills and take on fresh challenges.
+  </p>
+
+  <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 max-w-xl mx-auto">
+    {skills.map((skill) => (
+      <div class="flex flex-col items-center justify-center bg-gray-200 rounded-lg p-4">
+        <div class="w-12 h-12 bg-gray-400 rounded mb-2 flex items-center justify-center text-white font-semibold">
+            <skill.icon />
+        </div>
+        <span class="text-sm text-gray-700">{skill.name}</span>
+      </div>
+    ))}
+  </div>
+</section>
