@@ -1,90 +1,185 @@
 ---
 // src/pages/heart-of-fire.astro
-import BaseLayout from '../layouts/BaseLayout.astro'; // Adjust path as needed
+import BookLayout from '../layouts/BookLayout.astro';
 ---
 
-<BaseLayout title="Heart of Fire Series | Michael Goulding" description="A stockroom worker turned walking natural disaster. The Heart of Fire sci-fi series.">
+<BookLayout title="Heart of Fire Series | Michael Elias Goulding" description="A stockroom worker at Fullington Electronics. An Ancient Crystal. The Heart of Fire Series.">
   
-  {/* We wrap the whole page content in a dark slate/obsidian background to isolate the book's vibe from the main site's gradient */}
-  <main class="bg-[#121212] text-gray-200 min-h-screen font-sans selection:bg-[#00E5FF] selection:text-black">
+  <main class="w-full">
     
     {/* HERO SECTION */}
-    <section class="relative flex flex-col items-center justify-center text-center pt-32 pb-20 px-6 overflow-hidden">
-      {/* Optional: A subtle glowing gradient orb behind the text */}
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#FF4500] opacity-20 blur-[120px] rounded-full pointer-events-none"></div>
+    <section class="relative flex flex-col items-center justify-center text-center pt-24 pb-20 px-6 overflow-hidden border-b border-gray-800">
+      {/* Magma Glow */}
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#FF4500] opacity-10 blur-[150px] rounded-full pointer-events-none"></div>
 
-      <div class="z-10 max-w-4xl mx-auto space-y-6">
-        <p class="text-[#FF4500] font-bold tracking-widest uppercase text-sm md:text-base animate-pulse">
-          The Heart of Fire Series is Here
-        </p>
+      <div class="z-10 max-w-4xl mx-auto space-y-8">
+        <div class="inline-flex items-center gap-3 px-4 py-2 bg-gray-900 border border-[#FF4500]/30 rounded-full text-sm font-medium tracking-wide">
+          <span class="text-[#FF4500]">🔥 THE HEART OF FIRE SERIES</span> 
+          <span class="text-gray-400">|</span> 
+          <span class="text-gray-300">Ember in the Darkness (Book 1) is available now</span>
+        </div>
         
-        <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight drop-shadow-lg">
-          A Stockroom Worker Turned <br/> 
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#FF4500] to-yellow-500">
-            Walking Natural Disaster.
+        <h1 class="text-4xl md:text-6xl font-black text-white leading-tight uppercase tracking-tight">
+          A Stockroom Worker at Fullington Electronics.<br/> 
+          An Ancient Crystal Buried Over His Heart.<br/>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#FF4500] to-orange-500">
+            An Empire Built on Mechanical Flesh.
           </span>
         </h1>
         
-        <h2 class="text-2xl md:text-3xl text-gray-300 font-medium mt-4">
-          An Empire Built on Mechanical Flesh. <br/>
-          The Spark That Burns It All Down.
-        </h2>
+        <blockquote class="text-xl md:text-2xl text-[#00E5FF] italic font-light">
+          "Your strength lies within your heart." <br/>
+          <span class="text-sm text-gray-400 not-italic uppercase tracking-widest mt-2 block">— Dr. Vincent Lance</span>
+        </blockquote>
 
-        <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mt-6">
-          High-octane New Adult sci-fi/fantasy where ancient elemental power collides with corporate cybernetic horror.
+        <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+          In 2097, a 21-year-old stockboy discovers he carries the power of a walking nuclear weapon. Ancient elemental gems collide with corporate cybernetic horror in a fight for humanity’s survival.
         </p>
 
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
-          <a href="#" class="px-8 py-4 bg-[#FF4500] hover:bg-orange-600 text-white font-bold rounded-md transition-all shadow-[0_0_15px_rgba(255,69,0,0.5)] hover:shadow-[0_0_25px_rgba(255,69,0,0.8)]">
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+          <a href="#" class="px-8 py-4 bg-[#FF4500] hover:bg-orange-600 text-white font-bold rounded-md shadow-[0_0_20px_rgba(255,69,0,0.3)] transition-all">
             Buy Book 1 on Amazon
           </a>
-          <a href="#book-2" class="px-8 py-4 bg-transparent border-2 border-[#00E5FF] text-[#00E5FF] hover:bg-[#00E5FF] hover:text-black font-bold rounded-md transition-all">
-            Explore Book 2
+          <a href="#book-2" class="px-8 py-4 bg-transparent border border-[#00E5FF] text-[#00E5FF] hover:bg-[#00E5FF]/10 font-bold rounded-md transition-all">
+            Explore Book 2: Thermal Fracture
           </a>
         </div>
+      </div>
+    </section>
+
+    {/* SERIES OVERVIEW */}
+    <section class="max-w-4xl mx-auto px-6 py-20 text-center border-b border-gray-800">
+      <h2 class="text-3xl font-bold text-white mb-6 uppercase tracking-wider">From Westbrook to the Blaze of War</h2>
+      <div class="space-y-4 text-gray-300 text-lg leading-relaxed">
+        <p>In the year 2097, humanity lives under the shadow of <strong>GEAR</strong>—a technocratic empire replacing human beings with cold, mechanical units.</p>
+        <p>When 21-year-old Lock wakes up on a medical table with a glowing red Fire Gem permanently embedded in his chest, his quiet life in Westbrook ends. He isn't just a survivor of a corporate purge; he is named Commander Fireball, the chosen leader of the <strong>Human Resistance Taskforce</strong>.</p>
+        <p>From localized underground raids in Book One to a crushing global conflict in Book Two, the <em>Heart of Fire</em> series tracks a team of "misfits" carrying the devastating, god-tier powers of ancient gems—and the heavy psychological trauma that comes with them.</p>
       </div>
     </section>
 
     {/* BOOK 1 SPOTLIGHT */}
-    <section class="max-w-6xl mx-auto px-6 py-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      {/* Cover Image Placeholder */}
-      <div class="relative group">
-        <div class="absolute -inset-1 bg-gradient-to-r from-[#FF4500] to-[#00E5FF] rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-        <div class="relative aspect-[2/3] bg-gray-800 rounded-lg flex items-center justify-center border border-gray-700 shadow-2xl">
-          <span class="text-gray-500">[ Ember in the Darkness Cover Render ]</span>
-        </div>
+    <section class="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div class="aspect-[2/3] bg-gray-900 border border-gray-800 rounded-lg flex items-center justify-center shadow-2xl relative group overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-tr from-[#FF4500]/20 to-transparent opacity-50"></div>
+        <span class="text-gray-600 font-mono">[ Book 1 Cover ]</span>
       </div>
 
       <div class="space-y-6">
-        <div class="inline-block px-3 py-1 bg-gray-800 border border-gray-700 rounded-full text-xs font-semibold text-gray-300 tracking-wide">
-          Available Now in eBook, Paperback & Hardcover
-        </div>
+        <h3 class="text-4xl font-black text-white">Ember in the Darkness</h3>
+        <p class="text-sm text-[#00E5FF] uppercase tracking-widest font-bold">Heart of Fire — Book One</p>
         
-        <h3 class="text-4xl font-bold text-white">Ember in the Darkness</h3>
-        
-        <blockquote class="border-l-4 border-[#FF4500] pl-4 italic text-xl text-gray-300">
-          "You didn't choose the fire. The fire chose you."
+        <blockquote class="border-l-2 border-[#FF4500] pl-4 italic text-lg text-gray-300">
+          "That flash was the crystal finding its master."
         </blockquote>
 
-        <p class="text-gray-400 leading-relaxed">
-          Locke was just trying to survive his shifts in the stockroom. But when a tragic awakening reveals a glowing red crystal buried over his heart, he learns two harrowing truths: his home wasn't destroyed by terrorists—it was incinerated by his own uncontrolled power—and the empire known as GEAR is coming for him.
-        </p>
+        <p class="text-gray-400">Lock was just an average guy stressing about rent and working shifts at Fullington Electronics. But after his landlord Jerry is murdered and Lock awakens tied to a table, Dr. Vincent Lance reveals a terrifying reality: a red crystal has implanted itself over Lock's heart, granting him uncontrollable pyrokinetic power.</p>
+        
+        <p class="text-gray-400">Racked by guilt after learning his own awakening incinerated his home, Lock is thrust into the ranks of the Human Resistance. To survive, he must master his volatile fire alongside a crew of elite soldiers: <strong>Zeva (Agent Z)</strong>, a bold fighter pilot commanding thunder and wielding <em>Mjolnir</em>; <strong>Rudy (Agent Tidal Wave)</strong>, a disciplined specialist controlling high-pressure water; and <strong>Mia</strong>, a brilliant scholar who carries the dormant presence of the earth goddess, Gaia.</p>
 
-        <ul class="space-y-3 text-gray-300">
-          <li><span class="text-[#00E5FF]">⚡ Fast-Paced Magic System:</span> Hard elemental powers paired with tactical sci-fi combat.</li>
-          <li><span class="text-[#00E5FF]">🤖 Cybernetic Threat:</span> Brutal cyborg armies and bio-mechanical horrors.</li>
-          <li><span class="text-[#00E5FF]">🤝 Found Family:</span> Snarky banter, fierce loyalty, and deep character bonds.</li>
-        </ul>
+        <p class="text-gray-400">Together, they must dismantle GEAR’s mutilation factories before a mysterious figure in a blue suit brings about total war.</p>
+
+        <div class="flex gap-4 pt-4">
+          <button class="text-white border-b-2 border-[#FF4500] pb-1 hover:text-[#FF4500] transition-colors">Buy on Amazon</button>
+          <button class="text-white border-b-2 border-gray-600 pb-1 hover:text-white transition-colors">Read Sample</button>
+          <button class="text-white border-b-2 border-gray-600 pb-1 hover:text-white transition-colors">Add on Goodreads</button>
+        </div>
       </div>
     </section>
 
-  </main>
-</BaseLayout>
-      <style is:global>
-  /* Nuke the green gradient and force the obsidian background just for this page */
-  .backgrounds {
-    background: #121212 !important;
-    background-image: none !important;
-  }
-</style>
+    {/* BOOK 2 SPOTLIGHT */}
+    <section id="book-2" class="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-gray-900/30 border-y border-gray-800">
+      <div class="order-2 md:order-1 space-y-6">
+        <h3 class="text-4xl font-black text-white">Thermal Fracture</h3>
+        <p class="text-sm text-[#00E5FF] uppercase tracking-widest font-bold">Heart of Fire — Book Two</p>
+        
+        <blockquote class="border-l-2 border-[#FF4500] pl-4 italic text-lg text-gray-300">
+          "Fire destroys completely."
+        </blockquote>
 
+        <p class="text-gray-400">The fight against GEAR was only the opening move in a much larger game.</p>
+        
+        <p class="text-gray-400">Carrying both the Fire Gem in his chest and his fallen teammate Knockout's gray <strong>Quake Gem</strong> in his hand, Locke is forced to balance volatile rage with the crushing weight of "Unlimited Destruction."</p>
+
+        <p class="text-gray-400">When an ambush in Westbrook leaves Locke and Mia separated, Locke is hunted across a broken continent—from the walking tanks of industrial ruins to the high-tech military hub of Horizon Base. Reunited with Zeva and Rudy, the team captures the glitching cyborg scavenger Junks and embarks on a high-stakes, 20-hour road trip inside Mia's vintage 2004 Mustang.</p>
+
+        <ul class="space-y-2 text-gray-300 text-sm mt-4">
+          <li><strong class="text-white">🚗 The Mustang Road Trip:</strong> Interpersonal tension, secret confessions, and deadpan banter.</li>
+          <li><strong class="text-white">👥 Dual-Gem Harmonization:</strong> Balancing emotion-driven fire with will-driven seismic vibrations.</li>
+          <li><strong class="text-white">🤖 Corporate Horror:</strong> Shadow operative Francis, hard-light projections, and the corruption of TIE.</li>
+        </ul>
+
+        <div class="flex gap-4 pt-4">
+          <button class="text-white border-b-2 border-[#00E5FF] pb-1 hover:text-[#00E5FF] transition-colors">Explore Book 2</button>
+          <button class="text-white border-b-2 border-gray-600 pb-1 hover:text-white transition-colors">Pre-Order</button>
+        </div>
+      </div>
+
+      <div class="order-1 md:order-2 aspect-[2/3] bg-gray-900 border border-gray-800 rounded-lg flex items-center justify-center shadow-2xl relative group overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-bl from-[#00E5FF]/20 to-transparent opacity-50"></div>
+        <span class="text-gray-600 font-mono">[ Book 2 Cover ]</span>
+      </div>
+    </section>
+
+    {/* THE HUMAN RESISTANCE TASKFORCE */}
+    <section class="max-w-6xl mx-auto px-6 py-20 border-b border-gray-800">
+      <h2 class="text-3xl font-black text-white text-center mb-12 uppercase tracking-wider">The Human Resistance Taskforce</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Locke */}
+        <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-800 hover:border-[#FF4500]/50 transition-colors">
+          <h4 class="text-2xl font-bold text-white mb-2">🔥 LOCKE <span class="text-sm text-gray-500 font-normal">("Commander Fireball")</span></h4>
+          <p class="text-sm text-[#FF4500] mb-4 font-mono">GEMS: Fire (Chest) & Quake (Hand) | WEAPON: Dragon Tooth Sword</p>
+          <p class="text-gray-400">A former stockroom boy carrying the weight of unintended destruction. His Fire Gem altered his biology so he no longer feels cold, while his Quake Gem grants him the power to shatter matter at an elemental level.</p>
+        </div>
+
+        {/* Zeva */}
+        <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-800 hover:border-[#00E5FF]/50 transition-colors">
+          <h4 class="text-2xl font-bold text-white mb-2">⚡ ZEVA <span class="text-sm text-gray-500 font-normal">("Agent Z")</span></h4>
+          <p class="text-sm text-[#00E5FF] mb-4 font-mono">GEMS: Thunder & Lightning | WEAPON: Mjolnir</p>
+          <p class="text-gray-400">An elite military fighter pilot who caused the 50-meter "Thunder Crater" near Calgary during her power awakening. She balances concussive sonic thunder-claps with high-voltage electricity and sharp, sarcastic wit.</p>
+        </div>
+
+        {/* Rudy */}
+        <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-800 hover:border-blue-500/50 transition-colors">
+          <h4 class="text-2xl font-bold text-white mb-2">🌊 RUDY <span class="text-sm text-gray-500 font-normal">("Agent Tidal Wave")</span></h4>
+          <p class="text-sm text-blue-400 mb-4 font-mono">GEMS: Water & Ice | WEAPON: Eye of the Leviathan</p>
+          <p class="text-gray-400">A disciplined, pragmatic soldier who treats high-pressure water geysers and frost constructs like heavy artillery. He acts as the tactical anchor and bullshit detector for the team.</p>
+        </div>
+
+        {/* Mia */}
+        <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-800 hover:border-emerald-500/50 transition-colors">
+          <h4 class="text-2xl font-bold text-white mb-2">🌿 MIA</h4>
+          <p class="text-sm text-emerald-400 mb-4 font-mono">SPECIALTY: 2090s Historical Research & Legacy Systems</p>
+          <p class="text-gray-400">Former vessel for the goddess Gaia. Now disoriented by missing memories, she uses her skills as a historian to trace digital lies, unmask Mr. Pleasant's network, and crack ancient server tech.</p>
+        </div>
+      </div>
+    </section>
+
+    {/* NEWSLETTER CTA */}
+    <section class="max-w-3xl mx-auto px-6 py-20 text-center">
+      <h2 class="text-3xl font-black text-white mb-4 uppercase">Join the Human Resistance</h2>
+      <p class="text-gray-400 mb-8">Get exclusive intel, behind-the-scenes lore, character dossiers, and news on upcoming book releases.</p>
+      
+      <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+        <input type="email" placeholder="Enter your email address..." class="flex-1 bg-gray-900 border border-gray-700 rounded-md px-4 py-3 text-white focus:outline-none focus:border-[#FF4500]" required />
+        <button type="submit" class="bg-[#FF4500] hover:bg-orange-600 text-white font-bold px-6 py-3 rounded-md transition-colors whitespace-nowrap">
+          JOIN THE RESISTANCE
+        </button>
+      </form>
+      <p class="text-xs text-gray-600 mt-4">(No spam. Unsubscribe at any time.)</p>
+    </section>
+
+    {/* SIMPLE FOOTER */}
+    <footer class="border-t border-gray-800 py-8 text-center text-sm text-gray-500">
+      <div class="flex flex-wrap justify-center gap-4 mb-4">
+        <a href="#" class="hover:text-white transition-colors">Home</a>
+        <a href="#" class="hover:text-white transition-colors">Books</a>
+        <a href="#" class="hover:text-white transition-colors">World Lore</a>
+        <a href="#" class="hover:text-white transition-colors">About the Author</a>
+        <a href="#" class="hover:text-white transition-colors">Contact</a>
+      </div>
+      <p>© 2026 Michael Elias Goulding. All rights reserved. Heart of Fire, Ember in the Darkness, and Thermal Fracture are trademarks of Michael Elias Goulding.</p>
+    </footer>
+
+  </main>
+</BookLayout>
