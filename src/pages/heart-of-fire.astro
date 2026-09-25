@@ -80,4 +80,11 @@ import BaseLayout from '../layouts/BaseLayout.astro'; // Adjust path as needed
 
   </main>
 </BaseLayout>
-      
+      <style is:global>
+  /* Nuke the green gradient and force the obsidian background just for this page */
+  .backgrounds {
+    background: #121212 !important;
+    background-image: none !important;
+  }
+</style>
+
