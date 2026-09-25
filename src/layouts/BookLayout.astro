@@ -1,0 +1,25 @@
+---
+// src/layouts/BookLayout.astro
+import MainHead from '../components/MainHead.astro';
+// If you want a specific minimal nav for the book side, you'd import it here. 
+// Otherwise, you can just leave it out to create a dedicated landing page feel.
+
+interface Props {
+	title?: string | undefined;
+	description?: string | undefined;
+}
+
+const { title, description } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<MainHead title={title} description={description} />
+	</head>
+	<body class="bg-[#121212] text-gray-200 font-sans selection:bg-[#00E5FF] selection:text-black">
+        {/* Absolute obsidian background, no gradients bleeding through */}
+		<div class="min-h-screen flex flex-col isolation-auto">
+			<slot />
+		</div>
+	</body>
+</html>
